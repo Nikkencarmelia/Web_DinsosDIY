@@ -1,0 +1,51 @@
+.content-with-navbar {
+  padding-top: 80px;
+  background: #f8f9fa;
+  min-height: 100vh;
+}
+
+/* Card styling */
+.card {
+  border: none;
+  border-radius: 1rem;
+  background: #ffffff;
+  box-shadow: 0 8px 16px rgba(200, 200, 200, 0.2),
+              0 4px 6px rgba(255, 255, 255, 0.5);
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(200, 200, 200, 0.3),
+              0 6px 8px rgba(255, 255, 255, 0.6);
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.8rem;
+  text-align: center;
+}
+
+.total-number {
+  font-size: 2rem;
+  color: #007bff;
+  margin-bottom: 0.5rem;
+}
+
+.dashboard-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #212529;
+}
+
+.welcome-text {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.admin-body-content {
+  flex-grow: 1;
+  padding: 20px;
+}

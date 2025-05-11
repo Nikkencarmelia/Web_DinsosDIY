@@ -1,0 +1,15 @@
+.login-container {
+  height: 100vh;
+}
+
+.login-form {
+  width: 80%;
+  max-width: 400px;
+}
+
+.login-image {
+  background-image: url('https://images.pexels.com/photos/572056/pexels-photo-572056.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}

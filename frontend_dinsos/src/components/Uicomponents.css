@@ -1,0 +1,125 @@
+/* styling css untuk komponen yang sering dipakai: button, footer */
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Konten utama akan tumbuh dan mendorong footer ke bawah */
+.main-content {
+    flex: 1;
+}
+
+.my-navbar {
+    transition: background-color 0.4s ease, backdrop-filter 0.4s ease;
+    padding: 1rem;
+  }
+  
+  .navbar-transparent {
+    background-color: rgba(255, 255, 255, 0); /* Full transparan */
+    box-shadow: none;
+  }
+  
+  .navbar-solid {
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+
+  /* Saat NAVBAR TRANSPARAN (awal halaman) */
+.navbar-transparent .navbar-brand,
+.navbar-transparent .nav-link,
+.navbar-transparent .btn-outline-primary {
+  color: white !important;
+  border-color: white !important;
+}
+
+/* Saat NAVBAR SOLID (di-scroll) */
+.navbar-solid .navbar-brand,
+.navbar-solid .nav-link,
+.navbar-solid .btn-outline-primary {
+  color: #212529 !important;
+  border-color: #0d6efd !important;
+}
+
+/* styling footer */
+.footer {
+    background: #02183F;
+    color: white;
+    padding: 40px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    position: relative;
+    text-align: left;
+    gap: 2rem;
+}
+
+.footer-left {
+    max-width: 50%;
+    text-align: justify;
+}
+
+.footer-right {
+    text-align: left;
+    text-align: justify;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer p {
+    margin: 10px 0;
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+/* responsive footer */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+
+  .footer-left, .footer-right {
+    max-width: 100%;
+  }
+
+  .footer-left p,
+  .footer-right p {
+    text-align: left;
+  }
+}
+
+
+
+
+/* styling navbar admin */
+/* Uicomponents.css - HANYA untuk navbar/topbar/sidebar */
+
+/* Layout dasar admin */
+
+  
+  
+  
+
+  

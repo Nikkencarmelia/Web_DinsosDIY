@@ -1,0 +1,237 @@
+.carousel-container {
+    position: relative;
+}
+
+.carousel-img {
+    max-height: 100vh;
+    object-fit: cover;
+    filter: brightness(70%);       /* nilai 0–100% (semakin kecil makin gelap) */
+  transition: filter 0.3s ease;  /* smooth transition kalau mau dinamis */
+}
+
+.btn-transparent {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 0.6rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-transparent:hover,
+  .btn-transparent:focus {
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    transform: scale(1.05);
+  }
+  
+  .btn-transparent:hover {
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
+  }
+  
+
+/* Caption untuk layar kecil */
+@media (max-width: 768px) {
+    .carousel-caption {
+        top: 25% !important;
+        left: 0;
+        right: 0;
+        padding: 1rem 1.5rem;
+        text-align: left;
+        width: 100%;
+    }
+
+    .carousel-caption h2 {
+        font-size: 1.25rem;
+    }
+
+    .carousel-caption h4 {
+        font-size: 1rem;
+    }
+
+    .carousel-text {
+        font-size: 0.9rem;
+    }
+
+    .btn-transparent {
+        background-color: transparent;
+        color: #fff;
+        border: 2px solid #fff;
+        padding: 0.6rem 1.5rem;
+        font-size: 1rem;
+        font-weight: 600;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+    }
+
+    .btn-transparent:hover,
+.btn-transparent:focus {
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    transform: scale(1.05);
+}
+
+.btn-transparent:hover {
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
+}
+
+}
+
+/* SECTION: Informasi Pelayanan */
+.informasi-pelayanan h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.informasi-pelayanan p {
+    max-width: 80%;
+    margin: 0 auto;
+    color: #333;
+}
+
+.informasi-pelayanan .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.informasi-pelayanan .card {
+    flex: 1 1 calc(33.333% - 1rem);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.informasi-pelayanan .card:hover {
+    transform: translateY(-5px);
+}
+
+.informasi-pelayanan .card-title {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.informasi-pelayanan .card-text {
+    text-align: justify;
+}
+
+/* SECTION: Standar Pelayanan */
+.vh-100 {
+    min-height: 100vh;
+}
+
+.standar-pelayanan h1 {
+    font-size: 2.5rem;
+}
+
+.standar-pelayanan h5 {
+    font-size: 1.2rem;
+    color: #02183F;
+}
+
+.standar-pelayanan p {
+    text-align: justify;
+    color: #444;
+}
+
+.standar-pelayanan img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+    .carousel-caption {
+        top: 30% !important;
+        font-size: 0.9rem;
+    }
+
+    .carousel-caption h2 {
+        font-size: 1.5rem;
+    }
+
+    .carousel-caption h4 {
+        font-size: 1.1rem;
+    }
+
+    .vh-100 {
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .vh-100 img {
+        max-width: 100% !important;
+        height: auto !important;
+        margin-bottom: 2rem;
+    }
+
+    .vh-100 .ms-5 {
+        margin-left: 0 !important;
+    }
+
+    /* Card stacking for small screen */
+    .informasi-pelayanan .card {
+        flex: 1 1 100%;
+    }
+
+    @media (max-width: 768px) {
+        .standar-pelayanan img {
+            margin-bottom: 1.5rem;
+        }
+    
+        .standar-pelayanan .row > div {
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+/* Standar Pelayanan Styles */
+/* Standar Pelayanan Styles */
+.standar-pelayanan {
+    background-color: transparent;  /* samakan dengan warna dasar halaman */
+    padding: 2rem 0;
+}
+
+.standar-pelayanan img {
+    max-width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+/* Card di dalam Standar Pelayanan */
+.standar-pelayanan .card {
+    background-color: #fff;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.standar-pelayanan .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.standar-pelayanan .card-body {
+    padding: 1.5rem;
+}
+
+.standar-pelayanan .card-title {
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
+.standar-pelayanan .card-text {
+    color: #444;
+    text-align: justify;
+    line-height: 1.6;
+}
